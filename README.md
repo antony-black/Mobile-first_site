@@ -1,2 +1,2 @@
 # Mobile-first_site
-Applied HTML, Grid, Flex Box, jquery
+Applied HTML, SCSS, Grid, Flex Box, jquery
