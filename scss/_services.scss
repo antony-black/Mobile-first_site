@@ -1,0 +1,114 @@
+.services {
+  padding: 25px 0 40px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 315px;
+    padding: 15px;
+    border: 1px solid $color-3;
+    border-bottom: none;
+    transition: all .3s;
+
+    &:last-child{
+      border-bottom: 1px solid $color-3;
+    }
+
+    &:hover{
+      .card-services{
+        min-height: 277px;
+        padding: 12px 28px 28px 22px;
+        border: 4px solid $color-1;
+
+        &__inner{
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.content-services {
+  text-align: center;
+
+  & + *{
+    margin-top: 40px;
+  }
+
+  &__title {
+    color: $color-1;
+    padding-bottom: 20px;
+
+    & + *{
+      margin-top: 80px;
+    }
+
+    &::after{
+      background-color: $color-1;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 1.2;
+    color: $color-2;
+
+    & + *{
+      margin-top: 20px;
+    }
+  }
+
+  &__descr {
+    font-size: 15px;
+    color: #797979;
+  }
+}
+
+.card-services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__image + *{
+    margin-top: 30px;
+  }
+
+  &__title {
+    @extend %robotocondensed-700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 2px;
+    color: $color-2;
+
+    & + *{
+      margin-top: 21px;
+    }
+  }
+
+  &__inner {
+    display: none;
+  }
+
+  &__text {
+    @extend %dosis-400;
+    text-align: center;
+
+    & + *{
+      margin-top: 17px;
+    }
+  }
+
+  &__link {
+    text-align: center;
+  }
+
+  &__link-item {
+    @extend %robotocondensed-700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 2px;
+    color: $color-1;
+  }
+}

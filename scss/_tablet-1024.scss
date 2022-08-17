@@ -1,0 +1,223 @@
+@media (min-width: 1024px) {
+  .head {
+    height: 618px;
+  } 
+  .slider-head {
+  
+    &__item {
+      height: 618px;
+      padding: 80px 0;
+    }
+  
+    &__title {
+      max-width: 590px;
+      font-size: 84px;
+
+      & + *{
+        margin-top: 30px;
+      }
+    }
+
+    &__text{
+
+      & + *{
+        margin-top: 34px;
+      }
+    }
+
+    .slick-dots{
+      bottom: 50px;
+    }
+
+    .arrow-prev{
+      background-color: $color-1;
+      top: calc(50% - 96px);
+    }
+
+    .arrow-next{
+      background-color: $color-3;
+      bottom: calc(50% - 17px);
+    }   
+  }  
+  // =========================
+
+  .call {
+  
+    &__text {
+      flex: 0 0 695px;
+    }
+  
+    &__descr {
+      max-width: 100%;
+    }
+    }
+  // =========================
+
+  .services{
+    padding: 50px 0 10px;
+
+    &__item{
+      flex: 0 1 25%;
+      padding: 20px 5px;
+      min-height: 271px;
+    }
+  } 
+  .content-services {
+
+    & + *{
+      margin-top: 30px;
+    }
+  
+    &__title {  
+
+      & + *{
+        margin-top: 80px;
+      }
+    }
+  
+    &__text {
+      padding-bottom: 40px;
+  
+      & + *{
+        margin-top: 35px;
+      }
+    }
+  } 
+  .card-services {
+    padding: 20px 13px;
+  }
+  // =========================
+
+  .project {
+  
+    &__items {
+      margin-left: -14px;
+      margin-right: -14px;
+      padding: 0 140px;
+    }
+
+    &__item{
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+  }
+  // =========================
+
+  .team {
+    padding: 80px 0;
+
+    &__inner + *{
+      margin-top: 0;
+    }
+  
+    &__video {
+      flex: 0 0 395px;
+      padding-top: 0;
+    }
+  
+    &__info {
+      flex: 0 0 490px;
+      padding-left: 60px;
+    }
+  }  
+  .box-video {
+    min-height: 380px;
+  }   
+  .info-team {
+   
+    &__title {
+      padding-bottom: 15px;
+  
+      & + *{
+        margin-top: 20px;
+      }
+    }
+  
+    &__text {
+      text-align: left;
+      margin-bottom: 20px;
+    }   
+  }
+  .team__btn{
+    margin-top: -65px;
+    margin-right: 200px;
+    position: relative;
+    z-index: 5;    
+  }
+  // =========================
+
+  .news {
+    padding: 65px 0 80px;
+  
+    &__title {
+  
+      & + *{
+        margin-top: 100px;
+      }
+    }
+  
+    &__items {
+      grid-template-columns: repeat(3, 270px);
+    }
+  }
+  // =========================
+
+  .quote {
+    padding: 100px 0 80px;
+  }
+  .slider-quote {
+  
+    &__icon {     
+      & + *{
+        margin-top: 45px;
+      }
+    }
+  
+    &__text {
+      max-width: 637px;
+      margin: 45px auto 80px;
+      line-height: 1.7;
+
+      & + *{
+        margin-top: 0px;
+      }
+    }
+
+    &__author{
+      margin-bottom: 80px;
+    }  
+  }
+  // =========================
+
+  .footer {
+  
+    &__inner {
+      padding: 160px;
+    }
+  
+    &__text {
+
+      & + *{
+        margin-top: 80px;
+      }
+    }
+  } 
+  .social-footer{
+     & + *{
+      margin-top: 60px;
+     }
+  }
+  .contact-footer {
+    flex-wrap: nowrap;
+  
+    &__item {
+      flex: 0 0 190px;
+      padding-right: 10px;
+      align-self: start;
+
+      &:not(:last-child){
+        margin-bottom: 0;
+       }
+    }
+  } 
+}

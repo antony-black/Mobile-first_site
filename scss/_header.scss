@@ -1,0 +1,33 @@
+.header {
+  background-color: $color-1;
+  padding: 7px 0;
+
+  &__inner {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu {
+
+  &__btn {
+    width: 40px;
+    height: 40px;
+    background-color: $color-3;
+    border-radius: 3px;
+    position: relative;
+
+    &::after{
+      content: '';
+      width: 13px;
+      height: 2px;
+      background-color: $color-1;
+      position: absolute;
+      top: 15px;
+      left: 14px;
+      box-shadow: 0 4px 0 0 $color-1, 0 8px 0 0 $color-1;
+    }
+  }
+}
